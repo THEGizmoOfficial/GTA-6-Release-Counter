@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+#timeCounter{
+    display: flex;
+    gap: 30px;
+}
+#timeCounter .timeCircle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timeCounter .timeCircle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+#timeCounter .timeCircle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #1a1a1a;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+#timeCounter .timeCircle svg circle:nth-child(2){
+    stroke: var(--color);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+#timeCounter div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5em;
+}
+#timeCounter div span{
+    position: absolute;
+    transform: translateX(-50%) translateY(-10px);
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+#timeCounter .dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+}
+#timeCounter .dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color), 0 0 60px var(-color);
+}
+.announcement{
+    font-size: 5em;
+    font-weight: 500;
+    color: #f7931e;
+    text-align: center;
+    line-height: 0.9em;
+    display: none;
+}
+.announcement span{
+    font-size: 0.5em;
+    font-weight: 300;
+}
