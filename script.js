@@ -13,7 +13,7 @@ let hoursDot = document.querySelector('.hourDot');
 let minutesDot = document.querySelector('.minuteDot');
 let secondsDot = document.querySelector('.secondDot');
 
-let endDate = '12/05/2023 00:00:00';
+let endDate = '01/01/2025 00:00:00';
 
 let x = setInterval(function(){
     let now = new Date(endDate).getTime();
