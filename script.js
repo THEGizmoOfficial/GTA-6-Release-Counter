@@ -13,9 +13,9 @@ let hoursDot = document.querySelector('.hourDot');
 let minutesDot = document.querySelector('.minuteDot');
 let secondsDot = document.querySelector('.secondDot');
 
-let endDate = '05/26/2026 00:00:00';
+let endDate = '11/19/2026 00:00:00';
 
-let x = setInterval(function(){
+let x = setInterval(function () {
     let now = new Date(endDate).getTime();
     let countDown = new Date().getTime();
     let distance = now - countDown;
@@ -39,8 +39,8 @@ let x = setInterval(function(){
     hoursDot.style.transform = `rotateZ(${h * 15}deg)`;
     minutesDot.style.transform = `rotateZ(${m * 6}deg)`;
     secondsDot.style.transform = `rotateZ(${s * 6}deg)`;
-    
-    if(distance < 0){
+
+    if (distance < 0) {
         clearInterval(x);
         document.getElementById("timeCounter").style.display = 'none';
         document.querySelector(".announcement").style.display = 'block';

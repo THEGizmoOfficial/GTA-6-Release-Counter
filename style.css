@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,11 +17,13 @@ body{
     background-size: cover;
     background-position: center;
 }
-#timeCounter{
+
+#timeCounter {
     display: flex;
     gap: 30px;
 }
-#timeCounter .timeCircle{
+
+#timeCounter .timeCircle {
     position: relative;
     width: 150px;
     height: 150px;
@@ -28,13 +32,15 @@ body{
     align-items: center;
     filter: drop-shadow(0 0 0.6rem #000000);
 }
-#timeCounter .timeCircle svg{
+
+#timeCounter .timeCircle svg {
     position: relative;
     width: 150px;
     height: 150px;
     transform: rotate(270deg);
 }
-#timeCounter .timeCircle svg circle{
+
+#timeCounter .timeCircle svg circle {
     width: 100%;
     height: 100%;
     fill: transparent;
@@ -43,12 +49,14 @@ body{
     stroke-linecap: round;
     transform: translate(5px, 5px);
 }
-#timeCounter .timeCircle svg circle:nth-child(2){
+
+#timeCounter .timeCircle svg circle:nth-child(2) {
     stroke: var(--color);
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
 }
-#timeCounter div{
+
+#timeCounter div {
     position: absolute;
     text-align: center;
     font-weight: 500;
@@ -56,7 +64,8 @@ body{
     font-size: 1.5em;
     text-shadow: rgb(0, 0, 0) 1px 1px 4px;
 }
-#timeCounter div span{
+
+#timeCounter div span {
     position: absolute;
     transform: translateX(-50%) translateY(-10px);
     font-size: 0.35em;
@@ -64,7 +73,8 @@ body{
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-#timeCounter .dots{
+
+#timeCounter .dots {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -74,7 +84,8 @@ body{
     align-items: flex-start;
     z-index: 1000;
 }
-#timeCounter .dots::before{
+
+#timeCounter .dots::before {
     content: '';
     position: absolute;
     top: -3px;
@@ -84,7 +95,8 @@ body{
     border-radius: 50%;
     filter: drop-shadow(0 0 0.6rem #f7931e);
 }
-.announcement{
+
+.announcement {
     font-size: 5em;
     font-weight: 500;
     color: #f7931e;
@@ -93,6 +105,7 @@ body{
     display: none;
     filter: drop-shadow(0 0 0.5rem #000000);
 }
-.announcement:hover{
+
+.announcement:hover {
     color: #E39986;
 }
