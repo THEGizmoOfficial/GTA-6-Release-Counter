@@ -13,9 +13,8 @@ let hoursDot = document.querySelector('.hourDot');
 let minutesDot = document.querySelector('.minuteDot');
 let secondsDot = document.querySelector('.secondDot');
 
-let endDate = '11/19/2026 00:00:00';
-
-let preorderDate = '06/25/2026 00:00:00';
+let preorderDate = '2026-06-25T00:00:00';
+let endDate = '2026-11-19T00:00:00';
 
 let preorderDays = document.getElementById("preorderDays");
 let preorderHours = document.getElementById("preorderHours");

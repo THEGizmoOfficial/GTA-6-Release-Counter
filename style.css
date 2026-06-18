@@ -153,3 +153,10 @@ body {
 #preorderButtons a:hover {
     background: #ffad42;
 }
+
+#preorderCounter span {
+    font-size: 0.4em;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
