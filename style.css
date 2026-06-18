@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(background2.jpg);
+    background-image: url(background3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -108,4 +108,48 @@ body {
 
 .announcement:hover {
     color: #E39986;
+}
+
+#preorderSection {
+    position: absolute;
+    bottom: 40px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    color: white;
+}
+
+#preorderSection h2 {
+    margin-bottom: 15px;
+    color: #f7931e;
+    text-shadow: 0 0 10px rgba(247, 147, 30, 0.7);
+}
+
+#preorderCounter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+#preorderButtons {
+    display: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+#preorderButtons a {
+    padding: 15px 30px;
+    background: #f7931e;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#preorderButtons a:hover {
+    background: #ffad42;
 }

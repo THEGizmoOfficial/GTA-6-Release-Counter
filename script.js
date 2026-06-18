@@ -15,6 +15,13 @@ let secondsDot = document.querySelector('.secondDot');
 
 let endDate = '11/19/2026 00:00:00';
 
+let preorderDate = '06/25/2026 00:00:00';
+
+let preorderDays = document.getElementById("preorderDays");
+let preorderHours = document.getElementById("preorderHours");
+let preorderMinutes = document.getElementById("preorderMinutes");
+let preorderSeconds = document.getElementById("preorderSeconds");
+
 let x = setInterval(function () {
     let now = new Date(endDate).getTime();
     let countDown = new Date().getTime();
@@ -45,4 +52,24 @@ let x = setInterval(function () {
         document.getElementById("timeCounter").style.display = 'none';
         document.querySelector(".announcement").style.display = 'block';
     };
+
+    let preorderTarget = new Date(preorderDate).getTime();
+    let preorderDistance = preorderTarget - countDown;
+
+    let pd = Math.floor(preorderDistance / (1000 * 60 * 60 * 24));
+    let ph = Math.floor((preorderDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let pm = Math.floor((preorderDistance % (1000 * 60 * 60)) / (1000 * 60));
+    let ps = Math.floor((preorderDistance % (1000 * 60)) / 1000);
+
+    preorderDays.innerHTML = pd + "<br><span>Dni</span>";
+    preorderHours.innerHTML = ph + "<br><span>Godzin</span>";
+    preorderMinutes.innerHTML = pm + "<br><span>Minut</span>";
+    preorderSeconds.innerHTML = ps + "<br><span>Sekund</span>";
+
+    if (preorderDistance <= 0) {
+
+        document.getElementById("preorderCounter").style.display = "none";
+
+        document.getElementById("preorderButtons").style.display = "flex";
+    }
 });
