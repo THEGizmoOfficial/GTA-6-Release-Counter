@@ -2,13 +2,16 @@
 <html lang="pl">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Licznik do wydania GTA VI</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="timeCounter">
+
         <div class="timeCircle" style="--color:#f7931e;">
             <div class="dots dayDot"></div>
             <svg>
@@ -17,6 +20,7 @@
             </svg>
             <div id="day">00</div>
         </div>
+
         <div class="timeCircle" style="--color:#f7931e;">
             <div class="dots hourDot"></div>
             <svg>
@@ -25,6 +29,7 @@
             </svg>
             <div id="hour">00</div>
         </div>
+
         <div class="timeCircle" style="--color:#f7931e;">
             <div class="dots minuteDot"></div>
             <svg>
@@ -33,6 +38,7 @@
             </svg>
             <div id="minute">00</div>
         </div>
+
         <div class="timeCircle" style="--color:#f7931e;">
             <div class="dots secondDot"></div>
             <svg>
@@ -41,19 +47,27 @@
             </svg>
             <div id="second">00</div>
         </div>
+
     </div>
+
     <div id="preorderSection">
 
-        <h2>Start Przedsprzedaży</h2>
+        <h2>Start przedsprzedaży</h2>
 
         <div id="preorderCounter">
+
             <div id="preorderDays">00</div>
+
             <div id="preorderHours">00</div>
+
             <div id="preorderMinutes">00</div>
+
             <div id="preorderSeconds">00</div>
+
         </div>
 
         <div id="preorderButtons">
+
             <a href="https://www.playstation.com/pl-pl/games/grand-theft-auto-vi/" target="_blank">
                 Przedsprzedaż PS5
             </a>
@@ -65,8 +79,42 @@
         </div>
 
     </div>
-    <a class="announcement" target="_blank" href="https://www.youtube.com/@RockstarGames">GTA VI</a>
-    <script type="text/javascript" src="script.js"></script>
+
+
+    <div id="trailerSection">
+
+        <h2>Grand Theft Auto VI: Szersze spojrzenie</h2>
+
+        <div id="trailerCounter">
+
+            <div id="trailerDays">00<br><span>Dni</span></div>
+
+            <div id="trailerHours">00<br><span>Godzin</span></div>
+
+            <div id="trailerMinutes">00<br><span>Minut</span></div>
+
+            <div id="trailerSeconds">00<br><span>Sekund</span></div>
+
+        </div>
+
+        <div id="trailerButton">
+
+            <a href="https://www.netflix.com/title/83035795" target="_blank">
+                🎬 Obejrzyj na Netflix
+            </a>
+
+        </div>
+
+    </div>
+
+    <a class="announcement" href="https://www.youtube.com/@RockstarGames" target="_blank">
+
+        GTA VI
+
+    </a>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

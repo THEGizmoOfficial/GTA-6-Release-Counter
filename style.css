@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(background3.jpg);
+    background-image: url(background4.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -159,4 +159,51 @@ body {
     display: block;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+#trailerSection {
+    position: absolute;
+    top: 40px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, .45);
+    text-align: center;
+    color: white;
+}
+
+#trailerSection h2 {
+    margin-bottom: 15px;
+    color: #E50914;
+    text-shadow: 0 0 10px rgba(229, 9, 20, .7);
+}
+
+#trailerCounter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#trailerCounter span {
+    font-size: .4em;
+    display: block;
+    text-transform: uppercase;
+}
+
+#trailerButton {
+    display: none;
+    margin-top: 20px;
+}
+
+#trailerButton a {
+    padding: 15px 30px;
+    background: #E50914;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#trailerButton a:hover {
+    background: #ff2a38;
 }
